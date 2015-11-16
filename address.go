@@ -62,7 +62,7 @@ addrLoop:
 }
 
 func getNATAddress() (net.IP, error) {
-	resp, err := http.Get("http://ip4.telize.com")
+	resp, err := http.Get("http://ipecho.net/plain")
 	if err != nil {
 		return nil, err
 	}
